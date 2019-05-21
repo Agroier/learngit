@@ -14,7 +14,7 @@ namespace foreachtest
         {
             string[] friendNames = { "Todd Athony ", "Kevin Holton", "Shane Laigle" };
             WriteLine($"Here are {friendNames.Length} of my friend");
-            foreach (string friendName in friendNames)
+            foreach (string friendName in friendNames)//foreach对数组内容进行只读访问，不能改变数组的值
             {
                 WriteLine(friendName);
             }
